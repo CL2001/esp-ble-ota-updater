@@ -35,14 +35,21 @@ pio run --project-dir ./firmware -t upload
 ## Python
 ### Set up env
 ```bash
+cd python_uploader
 poetry install --no-root
 poetry shell
 ```
 
 
-### Run python script
+### Run python local uploader script
 ```bash
 poetry run python local_uploader.py
+```
+
+
+### Send messages over bluetooth and recive response
+```bash
+poetry run python msg_sender.py
 ```
 
 
